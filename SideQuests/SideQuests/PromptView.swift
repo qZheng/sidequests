@@ -104,7 +104,7 @@ struct PromptView: View {
         HStack(spacing: 12) {
             Button(action: toggleFavorite) {
                 Image(systemName: isFavorite ? "heart.fill" : "heart")
-                    .font(.title2)
+                    .font(.body)
                     .foregroundColor(isFavorite ? .red : .secondary)
                     .frame(width: 33, height: 33)
                     .background(Color(.systemGray5))
@@ -116,7 +116,7 @@ struct PromptView: View {
                 // TODO: Mark as completed
             }) {
                 Image(systemName: "checkmark")
-                    .font(.title2)
+                    .font(.body)
                     .foregroundColor(.white)
                     .frame(width: 33, height: 33)
                     .background(Color.green)
