@@ -16,35 +16,38 @@ struct PromptView: View {
     @State private var isFavorite: Bool = false
 
     var body: some View {
-        VStack(spacing: 20) {
-            Spacer()
+        GeometryReader { geometry in
+            VStack(spacing: 20) {
+                Spacer()
 
-            promptCard
-                .padding(.horizontal)
+                promptCard
+                    .frame(height: geometry.size.height * 0.6)
+                    .padding(.horizontal)
 
-            Spacer()
-            Spacer()
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.all))
-        .task {
-            isFavorite = appState.favoritePromptIDs.contains(prompt.id)
-        }
-        .contentShape(Rectangle()) // Make the whole area tappable
-        .gesture(
-            TapGesture().onEnded {
-                onNext()
+                Spacer()
+                Spacer()
             }
-        )
-        .gesture(
-            DragGesture(minimumDistance: 20, coordinateSpace: .local)
-                .onEnded { value in
-                    // Swipe right
-                    if value.translation.width > 0 {
-                        onBack()
-                    }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.all))
+            .task {
+                isFavorite = appState.favoritePromptIDs.contains(prompt.id)
+            }
+            .contentShape(Rectangle()) // Make the whole area tappable
+            .gesture(
+                TapGesture().onEnded {
+                    onNext()
                 }
-        )
+            )
+            .gesture(
+                DragGesture(minimumDistance: 20, coordinateSpace: .local)
+                    .onEnded { value in
+                        // Swipe right
+                        if value.translation.width > 0 {
+                            onBack()
+                        }
+                    }
+            )
+        }
     }
 
     private var promptCard: some View {
@@ -59,7 +62,7 @@ struct PromptView: View {
 
                 Spacer() // Pushes the metadata to the bottom
             }
-            .frame(maxWidth: .infinity, minHeight: 350)
+            .frame(maxWidth: .infinity)
             .background(Color(.secondarySystemBackground))
             .cornerRadius(20)
             .shadow(radius: 5)
@@ -103,7 +106,7 @@ struct PromptView: View {
                 Image(systemName: isFavorite ? "heart.fill" : "heart")
                     .font(.title2)
                     .foregroundColor(isFavorite ? .red : .secondary)
-                    .frame(width: 44, height: 44)
+                    .frame(width: 33, height: 33)
                     .background(Color(.systemGray5))
                     .clipShape(Circle())
             }
@@ -115,7 +118,7 @@ struct PromptView: View {
                 Image(systemName: "checkmark")
                     .font(.title2)
                     .foregroundColor(.white)
-                    .frame(width: 44, height: 44)
+                    .frame(width: 33, height: 33)
                     .background(Color.green)
                     .clipShape(Circle())
             }
