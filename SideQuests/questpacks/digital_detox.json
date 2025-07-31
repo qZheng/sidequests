@@ -1,0 +1,27 @@
+{
+    "id": "C4C3CC9B-0401-495A-A4EA-D56B31599165",
+    "name": "Digital Detox",
+    "iconName": "iphone.slash",
+    "prompts": [
+        {
+            "id": "3A129059-35BC-4800-870B-D4282D23C75F",
+            "text": "Put your phone away for the next 30 minutes.",
+            "metadata": {
+                "vibe": "focused",
+                "durationInMinutes": 30,
+                "tools": [],
+                "timesOfDay": ["night", "day"]
+            }
+        },
+        {
+            "id": "09879926-D4D3-4EDA-BB6E-507BE3DC66C5",
+            "text": "Read a chapter of a physical book.",
+            "metadata": {
+                "vibe": "calm",
+                "durationInMinutes": 15,
+                "tools": ["book"],
+                "timesOfDay": ["night"]
+            }
+        }
+    ]
+}

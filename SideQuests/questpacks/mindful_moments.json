@@ -1,0 +1,27 @@
+{
+    "id": "11AD7BF6-7059-4E3A-9F08-288B0A7369A3",
+    "name": "Mindful Moments",
+    "iconName": "brain.head.profile",
+    "prompts": [
+        {
+            "id": "23F433FE-73BC-41C6-8200-C929C74CEC38",
+            "text": "Close your eyes and focus on your breath for one minute.",
+            "metadata": {
+                "vibe": "calm",
+                "durationInMinutes": 1,
+                "tools": [],
+                "timesOfDay": ["night", "sunrise", "day", "sunset"]
+            }
+        },
+        {
+            "id": "7504C68C-C491-46CA-87FA-516A084FFE76",
+            "text": "Notice three things in the room you haven't noticed before.",
+            "metadata": {
+                "vibe": "curious",
+                "durationInMinutes": 5,
+                "tools": ["eyes"],
+                "timesOfDay": ["day"]
+            }
+        }
+    ]
+}

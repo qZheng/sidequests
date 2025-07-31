@@ -1,0 +1,27 @@
+{
+    "id": "009D6275-1199-4D26-B5B9-1762D688E74F",
+    "name": "Nature's Observer",
+    "iconName": "leaf.fill",
+    "prompts": [
+        {
+            "id": "BFBC6F8F-BCC3-4C46-9FBF-9FBCBCFBF4E8",
+            "text": "Look out a window and find something beautiful in nature.",
+            "metadata": {
+                "vibe": "peaceful",
+                "durationInMinutes": 2,
+                "tools": ["window"],
+                "timesOfDay": ["day", "sunset"]
+            }
+        },
+        {
+            "id": "B8842641-F439-4DDD-85A6-D044F41600CE",
+            "text": "Step outside and take three deep breaths of fresh air.",
+            "metadata": {
+                "vibe": "refreshed",
+                "durationInMinutes": 1,
+                "tools": [],
+                "timesOfDay": ["sunrise", "day"]
+            }
+        }
+    ]
+}

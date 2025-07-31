@@ -1,0 +1,27 @@
+{
+    "id": "905C02F5-3ED4-4322-99C6-CB6B6455378E",
+    "name": "Productivity Power-Up",
+    "iconName": "bolt.fill",
+    "prompts": [
+        {
+            "id": "952BDD97-5562-4E04-AD1C-8782159C43A0",
+            "text": "Tidy up your workspace for five minutes.",
+            "metadata": {
+                "vibe": "organized",
+                "durationInMinutes": 5,
+                "tools": [],
+                "timesOfDay": ["day"]
+            }
+        },
+        {
+            "id": "96E766DF-3FC1-4179-A081-4ADBADD5036C",
+            "text": "Write down your top three priorities for tomorrow.",
+            "metadata": {
+                "vibe": "focused",
+                "durationInMinutes": 5,
+                "tools": ["pen", "paper"],
+                "timesOfDay": ["night"]
+            }
+        }
+    ]
+}

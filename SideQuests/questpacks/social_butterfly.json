@@ -1,0 +1,27 @@
+{
+    "id": "B42CC34A-C53C-47B9-944F-D82CCCDE6709",
+    "name": "Social Butterfly",
+    "iconName": "person.2.fill",
+    "prompts": [
+        {
+            "id": "1097CBCA-B3CB-4D17-AEA6-3F8257D2265B",
+            "text": "Send a thoughtful message to a friend you haven't spoken to recently.",
+            "metadata": {
+                "vibe": "connected",
+                "durationInMinutes": 5,
+                "tools": ["phone"],
+                "timesOfDay": ["day", "sunset"]
+            }
+        },
+        {
+            "id": "A6339F5C-8A8A-4733-92C5-F1B65EA36FC7",
+            "text": "Smile at a stranger.",
+            "metadata": {
+                "vibe": "friendly",
+                "durationInMinutes": 1,
+                "tools": [],
+                "timesOfDay": ["day"]
+            }
+        }
+    ]
+}

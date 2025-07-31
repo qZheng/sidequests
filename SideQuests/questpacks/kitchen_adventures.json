@@ -1,0 +1,27 @@
+{
+    "id": "D6869733-552A-4E2D-863E-93753BA47A1E",
+    "name": "Kitchen Adventures",
+    "iconName": "fork.knife",
+    "prompts": [
+        {
+            "id": "875E3D38-B2A0-43A2-9C38-8377C3CE226F",
+            "text": "Make a cup of tea or coffee, and savor it without distractions.",
+            "metadata": {
+                "vibe": "cozy",
+                "durationInMinutes": 10,
+                "tools": ["kettle"],
+                "timesOfDay": ["sunrise", "day"]
+            }
+        },
+        {
+            "id": "A54D864B-2194-49F5-AE3B-88BACE402440",
+            "text": "Try a fruit or vegetable you've never had before.",
+            "metadata": {
+                "vibe": "adventurous",
+                "durationInMinutes": 5,
+                "tools": ["kitchen"],
+                "timesOfDay": ["day"]
+            }
+        }
+    ]
+}

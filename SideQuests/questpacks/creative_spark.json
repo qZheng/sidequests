@@ -1,0 +1,27 @@
+{
+    "id": "288BC052-2D15-49B6-B443-9AD06AB4684F",
+    "name": "Creative Spark",
+    "iconName": "sparkles",
+    "prompts": [
+        {
+            "id": "7AA82248-3ED5-4321-8D75-F003700F8166",
+            "text": "Doodle the first shape that comes to mind and turn it into a character.",
+            "metadata": {
+                "vibe": "playful",
+                "durationInMinutes": 10,
+                "tools": ["pen", "paper"],
+                "timesOfDay": ["day"]
+            }
+        },
+        {
+            "id": "25057DC9-146A-4263-B5EC-1E3BAB0552E6",
+            "text": "Write a six-word story about your day so far.",
+            "metadata": {
+                "vibe": "expressive",
+                "durationInMinutes": 5,
+                "tools": ["pen", "paper"],
+                "timesOfDay": ["day", "night"]
+            }
+        }
+    ]
+}

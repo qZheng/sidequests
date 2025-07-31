@@ -17,17 +17,12 @@ class QuestPackLoader {
             let fileURLs = try fileManager.contentsOfDirectory(at: questPacksURL, includingPropertiesForKeys: nil)
             return fileURLs.compactMap { url -> PromptPack? in
                 guard url.pathExtension == "json" else { return nil }
-                guard var pack: PromptPack = decode(from: url) else { return nil }
                 
-                pack.prompts = pack.prompts.map { prompt in
-                    Prompt(
-                        id: prompt.id,
-                        text: prompt.text,
-                        metadata: prompt.metadata,
-                        packName: pack.name
-                    )
-                }
-                return pack
+                // First, decode just the pack name
+                guard let partialPack = decodePartial(from: url) else { return nil }
+                
+                // Now, decode the full pack with the pack name in user info
+                return decode(from: url, packName: partialPack.name)
             }
         } catch {
             print("Error loading quest packs directory: \(error)")
@@ -35,14 +30,26 @@ class QuestPackLoader {
         }
     }
 
-    private static func decode<T: Decodable>(from url: URL) -> T? {
+    private static func decode<T: Decodable>(from url: URL, packName: String? = nil) -> T? {
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
+            if let packName = packName {
+                decoder.userInfo[CodingUserInfoKey(rawValue: "packName")!] = packName
+            }
             return try decoder.decode(T.self, from: data)
         } catch {
             print("Error decoding \(T.self) from \(url.lastPathComponent): \(error)")
             return nil
         }
+    }
+    
+    // Helper to decode just the name for use in the full decode
+    private struct PartialPromptPack: Decodable {
+        let name: String
+    }
+    
+    private static func decodePartial(from url: URL) -> PartialPromptPack? {
+        decode(from: url)
     }
 }

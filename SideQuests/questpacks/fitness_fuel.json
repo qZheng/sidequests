@@ -1,0 +1,37 @@
+{
+    "id": "F0A931F8-9BC0-453E-8389-5FF7E943559A",
+    "name": "Fitness Fuel",
+    "iconName": "flame.fill",
+    "prompts": [
+        {
+            "id": "27396F92-BBCF-4354-93F5-ED6C8DB8D153",
+            "text": "Do 10 jumping jacks.",
+            "metadata": {
+                "vibe": "energetic",
+                "durationInMinutes": 1,
+                "tools": [],
+                "timesOfDay": ["sunrise", "day"]
+            }
+        },
+        {
+            "id": "68850B51-39E1-4C0D-8B46-34DFEF613AC7",
+            "text": "Stretch your arms and legs for two minutes.",
+            "metadata": {
+                "vibe": "relaxed",
+                "durationInMinutes": 2,
+                "tools": [],
+                "timesOfDay": ["night", "day"]
+            }
+        },
+        {
+            "id": "ECBE76BE-31CC-4615-A1CB-78DC2C2F7C3B",
+            "text": "Go for a brisk 5-minute walk.",
+            "metadata": {
+                "vibe": "active",
+                "durationInMinutes": 5,
+                "tools": [],
+                "timesOfDay": ["day", "sunset"]
+            }
+        }
+    ]
+}
