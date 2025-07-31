@@ -6,6 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A00BB3D52E3AF73C00D335A4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3C82E3AF73C00D335A4 /* AppState.swift */; };
+		A00BB3D62E3AF73C00D335A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3C92E3AF73C00D335A4 /* ContentView.swift */; };
+		A00BB3D72E3AF73C00D335A4 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3CA2E3AF73C00D335A4 /* MainTabView.swift */; };
+		A00BB3D82E3AF73C00D335A4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3CB2E3AF73C00D335A4 /* Models.swift */; };
+		A00BB3D92E3AF73C00D335A4 /* PacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3CC2E3AF73C00D335A4 /* PacksView.swift */; };
+		A00BB3DA2E3AF73C00D335A4 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3CD2E3AF73C00D335A4 /* PromptView.swift */; };
+		A00BB3DB2E3AF73C00D335A4 /* QuestPackLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3CE2E3AF73C00D335A4 /* QuestPackLoader.swift */; };
+		A00BB3DC2E3AF73C00D335A4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3CF2E3AF73C00D335A4 /* SettingsView.swift */; };
+		A00BB3DD2E3AF73C00D335A4 /* SideQuestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3D02E3AF73C00D335A4 /* SideQuestsApp.swift */; };
+		A00BB3DE2E3AF73C00D335A4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3D12E3AF73C00D335A4 /* Theme.swift */; };
+		A00BB3DF2E3AF73C00D335A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00BB3C62E3AF73C00D335A4 /* Preview Assets.xcassets */; };
+		A00BB3E02E3AF73C00D335A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00BB3D32E3AF73C00D335A4 /* Assets.xcassets */; };
+		A00BB40B2E3AFA1B00D335A4 /* questpacks in Resources */ = {isa = PBXBuildFile; fileRef = A00BB40A2E3AFA1B00D335A4 /* questpacks */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A00D7D3A2E3AB91300F7538C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +40,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A00BB3C62E3AF73C00D335A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A00BB3C82E3AF73C00D335A4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A00BB3C92E3AF73C00D335A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00BB3CA2E3AF73C00D335A4 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A00BB3CB2E3AF73C00D335A4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A00BB3CC2E3AF73C00D335A4 /* PacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksView.swift; sourceTree = "<group>"; };
+		A00BB3CD2E3AF73C00D335A4 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		A00BB3CE2E3AF73C00D335A4 /* QuestPackLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestPackLoader.swift; sourceTree = "<group>"; };
+		A00BB3CF2E3AF73C00D335A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A00BB3D02E3AF73C00D335A4 /* SideQuestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideQuestsApp.swift; sourceTree = "<group>"; };
+		A00BB3D12E3AF73C00D335A4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A00BB3D32E3AF73C00D335A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A00BB40A2E3AFA1B00D335A4 /* questpacks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = questpacks; sourceTree = "<group>"; };
 		A00D7D292E3AB91200F7538C /* SideQuests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideQuests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00D7D392E3AB91300F7538C /* SideQuestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideQuestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00D7D432E3AB91300F7538C /* SideQuestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideQuestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A00D7D2B2E3AB91200F7538C /* SideQuests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SideQuests;
-			sourceTree = "<group>";
-		};
 		A00D7D3C2E3AB91300F7538C /* SideQuestsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SideQuestsTests;
@@ -72,10 +96,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A00BB3C72E3AF73C00D335A4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A00BB3C62E3AF73C00D335A4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A00BB3D22E3AF73C00D335A4 /* SideQuests */ = {
+			isa = PBXGroup;
+			children = (
+				A00BB3C82E3AF73C00D335A4 /* AppState.swift */,
+				A00BB3C92E3AF73C00D335A4 /* ContentView.swift */,
+				A00BB3CA2E3AF73C00D335A4 /* MainTabView.swift */,
+				A00BB3CB2E3AF73C00D335A4 /* Models.swift */,
+				A00BB3CC2E3AF73C00D335A4 /* PacksView.swift */,
+				A00BB3CD2E3AF73C00D335A4 /* PromptView.swift */,
+				A00BB3CE2E3AF73C00D335A4 /* QuestPackLoader.swift */,
+				A00BB3CF2E3AF73C00D335A4 /* SettingsView.swift */,
+				A00BB3D02E3AF73C00D335A4 /* SideQuestsApp.swift */,
+				A00BB3D12E3AF73C00D335A4 /* Theme.swift */,
+			);
+			path = SideQuests;
+			sourceTree = "<group>";
+		};
+		A00BB3D42E3AF73C00D335A4 /* SideQuests */ = {
+			isa = PBXGroup;
+			children = (
+				A00BB3C72E3AF73C00D335A4 /* Preview Content */,
+				A00BB3D22E3AF73C00D335A4 /* SideQuests */,
+				A00BB3D32E3AF73C00D335A4 /* Assets.xcassets */,
+				A00BB40A2E3AFA1B00D335A4 /* questpacks */,
+			);
+			path = SideQuests;
+			sourceTree = "<group>";
+		};
 		A00D7D202E3AB91200F7538C = {
 			isa = PBXGroup;
 			children = (
-				A00D7D2B2E3AB91200F7538C /* SideQuests */,
+				A00BB3D42E3AF73C00D335A4 /* SideQuests */,
 				A00D7D3C2E3AB91300F7538C /* SideQuestsTests */,
 				A00D7D462E3AB91300F7538C /* SideQuestsUITests */,
 				A00D7D2A2E3AB91200F7538C /* Products */,
@@ -106,9 +166,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A00D7D2B2E3AB91200F7538C /* SideQuests */,
 			);
 			name = SideQuests;
 			packageProductDependencies = (
@@ -212,6 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00BB40B2E3AFA1B00D335A4 /* questpacks in Resources */,
+				A00BB3DF2E3AF73C00D335A4 /* Preview Assets.xcassets in Resources */,
+				A00BB3E02E3AF73C00D335A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00BB3D52E3AF73C00D335A4 /* AppState.swift in Sources */,
+				A00BB3D62E3AF73C00D335A4 /* ContentView.swift in Sources */,
+				A00BB3D72E3AF73C00D335A4 /* MainTabView.swift in Sources */,
+				A00BB3D82E3AF73C00D335A4 /* Models.swift in Sources */,
+				A00BB3D92E3AF73C00D335A4 /* PacksView.swift in Sources */,
+				A00BB3DA2E3AF73C00D335A4 /* PromptView.swift in Sources */,
+				A00BB3DB2E3AF73C00D335A4 /* QuestPackLoader.swift in Sources */,
+				A00BB3DC2E3AF73C00D335A4 /* SettingsView.swift in Sources */,
+				A00BB3DD2E3AF73C00D335A4 /* SideQuestsApp.swift in Sources */,
+				A00BB3DE2E3AF73C00D335A4 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
