@@ -1,8 +1,8 @@
 //
 //  QuestPackLoader.swift
-//  SideQuests
+//  SideQuestsWidget
 //
-//  Created by Lucas Zheng on 2025-07-30.
+//  Created by Lucas Zheng on 2025-08-02.
 //
 
 import Foundation
@@ -52,4 +52,4 @@ class QuestPackLoader {
     private static func decodePartial(from url: URL) -> PartialPromptPack? {
         decode(from: url)
     }
-}
+} 

@@ -10,7 +10,8 @@
                 "vibe": "energetic",
                 "durationInMinutes": 1,
                 "tools": [],
-                "timesOfDay": ["sunrise", "day"]
+                "timesOfDay": ["sunrise", "day"],
+                "locationContext": "any"
             }
         },
         {
@@ -20,7 +21,8 @@
                 "vibe": "relaxed",
                 "durationInMinutes": 2,
                 "tools": [],
-                "timesOfDay": ["night", "day"]
+                "timesOfDay": ["night", "day"],
+                "locationContext": "any"
             }
         },
         {
@@ -30,7 +32,8 @@
                 "vibe": "active",
                 "durationInMinutes": 5,
                 "tools": [],
-                "timesOfDay": ["day", "sunset"]
+                "timesOfDay": ["day", "sunset"],
+                "locationContext": "notHome"
             }
         }
     ]

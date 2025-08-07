@@ -10,7 +10,8 @@
                 "vibe": "connected",
                 "durationInMinutes": 5,
                 "tools": ["phone"],
-                "timesOfDay": ["day", "sunset"]
+                "timesOfDay": ["day", "sunset"],
+                "locationContext": "any"
             }
         },
         {
@@ -20,7 +21,8 @@
                 "vibe": "friendly",
                 "durationInMinutes": 1,
                 "tools": [],
-                "timesOfDay": ["day"]
+                "timesOfDay": ["day"],
+                "locationContext": "notHome"
             }
         }
     ]

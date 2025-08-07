@@ -10,7 +10,8 @@
                 "vibe": "focused",
                 "durationInMinutes": 30,
                 "tools": [],
-                "timesOfDay": ["night", "day"]
+                "timesOfDay": ["night", "day"],
+                "locationContext": "any"
             }
         },
         {
@@ -20,7 +21,8 @@
                 "vibe": "calm",
                 "durationInMinutes": 15,
                 "tools": ["book"],
-                "timesOfDay": ["night"]
+                "timesOfDay": ["night"],
+                "locationContext": "any"
             }
         }
     ]

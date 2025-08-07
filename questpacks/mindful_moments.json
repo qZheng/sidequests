@@ -10,7 +10,8 @@
                 "vibe": "calm",
                 "durationInMinutes": 1,
                 "tools": [],
-                "timesOfDay": ["night", "sunrise", "day", "sunset"]
+                "timesOfDay": ["night", "sunrise", "day", "sunset"],
+                "locationContext": "any"
             }
         },
         {
@@ -20,7 +21,8 @@
                 "vibe": "curious",
                 "durationInMinutes": 5,
                 "tools": ["eyes"],
-                "timesOfDay": ["day"]
+                "timesOfDay": ["day"],
+                "locationContext": "any"
             }
         }
     ]

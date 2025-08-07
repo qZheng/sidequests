@@ -13,7 +13,9 @@ struct PromptView: View {
     let onNext: () -> Void
     let onBack: () -> Void
 
-    @State private var isFavorite: Bool = false
+    private var isFavorite: Bool {
+        appState.favoritePromptIDs.contains(prompt.id)
+    }
 
     var body: some View {
         GeometryReader { geometry in
@@ -29,9 +31,6 @@ struct PromptView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.all))
-            .task {
-                isFavorite = appState.favoritePromptIDs.contains(prompt.id)
-            }
             .contentShape(Rectangle()) // Make the whole area tappable
             .gesture(
                 TapGesture().onEnded {
@@ -127,11 +126,10 @@ struct PromptView: View {
     }
 
     private func toggleFavorite() {
-        isFavorite.toggle()
         if isFavorite {
-            appState.favoritePromptIDs.insert(prompt.id)
-        } else {
             appState.favoritePromptIDs.remove(prompt.id)
+        } else {
+            appState.favoritePromptIDs.insert(prompt.id)
         }
     }
 }
@@ -142,7 +140,7 @@ struct PromptView_Previews: PreviewProvider {
             prompt: Prompt(
                 id: UUID(),
                 text: "Look out a window and find something you've never noticed before.",
-                metadata: .init(vibe: "curious", durationInMinutes: 5, tools: ["eyes"], timesOfDay: [.day]),
+                metadata: .init(vibe: "curious", durationInMinutes: 5, tools: ["eyes"], timesOfDay: [.day], locationContext: .any),
                 packName: "Mindful Moments"
             ),
             onNext: {},

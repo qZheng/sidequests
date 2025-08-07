@@ -10,7 +10,8 @@
                 "vibe": "cozy",
                 "durationInMinutes": 10,
                 "tools": ["kettle"],
-                "timesOfDay": ["sunrise", "day"]
+                "timesOfDay": ["sunrise", "day"],
+                "locationContext": "home"
             }
         },
         {
@@ -20,7 +21,8 @@
                 "vibe": "adventurous",
                 "durationInMinutes": 5,
                 "tools": ["kitchen"],
-                "timesOfDay": ["day"]
+                "timesOfDay": ["day"],
+                "locationContext": "any"
             }
         }
     ]

@@ -19,10 +19,28 @@
 		A00BB3DE2E3AF73C00D335A4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB3D12E3AF73C00D335A4 /* Theme.swift */; };
 		A00BB3DF2E3AF73C00D335A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00BB3C62E3AF73C00D335A4 /* Preview Assets.xcassets */; };
 		A00BB3E02E3AF73C00D335A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00BB3D32E3AF73C00D335A4 /* Assets.xcassets */; };
-		A00BB40B2E3AFA1B00D335A4 /* questpacks in Resources */ = {isa = PBXBuildFile; fileRef = A00BB40A2E3AFA1B00D335A4 /* questpacks */; };
+		A00BB40D2E3BCD2600D335A4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB40C2E3BCD2600D335A4 /* LocationManager.swift */; };
+		A00BB45C2E3BF68E00D335A4 /* Solar in Frameworks */ = {isa = PBXBuildFile; productRef = A00BB4312E3BF4DB00D335A4 /* Solar */; };
+		A00BB4652E3BFA3600D335A4 /* TimeOfDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB4632E3BFA3600D335A4 /* TimeOfDayService.swift */; };
+		A00BB4892E3E77AC00D335A4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00BB46C2E3E777D00D335A4 /* WidgetKit.framework */; };
+		A00BB48A2E3E77AC00D335A4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00BB46E2E3E777D00D335A4 /* SwiftUI.framework */; };
+		A00BB4992E3E77AC00D335A4 /* SideQuestsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A00BB4882E3E77AC00D335A4 /* SideQuestsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A00BB4AC2E3E80FB00D335A4 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB4AB2E3E80FB00D335A4 /* SharedModels.swift */; };
+		A00BB4AD2E3E80FB00D335A4 /* RefreshPromptIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB4AA2E3E80FB00D335A4 /* RefreshPromptIntent.swift */; };
+		A00BB4AE2E3E80FB00D335A4 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB4AB2E3E80FB00D335A4 /* SharedModels.swift */; };
+		A00BB4AF2E3E80FB00D335A4 /* RefreshPromptIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BB4AA2E3E80FB00D335A4 /* RefreshPromptIntent.swift */; };
+		A00BB51B2E3E8B2500D335A4 /* questpacks in Resources */ = {isa = PBXBuildFile; fileRef = A00BB5192E3E8B0800D335A4 /* questpacks */; };
+		A00BB51C2E3E8BB300D335A4 /* questpacks in Resources */ = {isa = PBXBuildFile; fileRef = A00BB5192E3E8B0800D335A4 /* questpacks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A00BB4972E3E77AC00D335A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00D7D212E3AB91200F7538C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00BB4872E3E77AC00D335A4;
+			remoteInfo = SideQuestsWidgetExtension;
+		};
 		A00D7D3A2E3AB91300F7538C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A00D7D212E3AB91200F7538C /* Project object */;
@@ -39,6 +57,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A00BB4832E3E777E00D335A4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A00BB4992E3E77AC00D335A4 /* SideQuestsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A00BB3C62E3AF73C00D335A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A00BB3C82E3AF73C00D335A4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -52,13 +84,41 @@
 		A00BB3D02E3AF73C00D335A4 /* SideQuestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideQuestsApp.swift; sourceTree = "<group>"; };
 		A00BB3D12E3AF73C00D335A4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A00BB3D32E3AF73C00D335A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A00BB40A2E3AFA1B00D335A4 /* questpacks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = questpacks; sourceTree = "<group>"; };
+		A00BB40C2E3BCD2600D335A4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A00BB40E2E3BD2AF00D335A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A00BB4632E3BFA3600D335A4 /* TimeOfDayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayService.swift; sourceTree = "<group>"; };
+		A00BB46C2E3E777D00D335A4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A00BB46E2E3E777D00D335A4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A00BB4882E3E77AC00D335A4 /* SideQuestsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SideQuestsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00BB49E2E3E78AE00D335A4 /* SideQuests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SideQuests.entitlements; sourceTree = "<group>"; };
+		A00BB49F2E3E79B200D335A4 /* SideQuestsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SideQuestsWidgetExtension.entitlements; sourceTree = "<group>"; };
+		A00BB4AA2E3E80FB00D335A4 /* RefreshPromptIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshPromptIntent.swift; sourceTree = "<group>"; };
+		A00BB4AB2E3E80FB00D335A4 /* SharedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModels.swift; sourceTree = "<group>"; };
+		A00BB5192E3E8B0800D335A4 /* questpacks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = questpacks; sourceTree = "<group>"; };
 		A00D7D292E3AB91200F7538C /* SideQuests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideQuests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00D7D392E3AB91300F7538C /* SideQuestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideQuestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00D7D432E3AB91300F7538C /* SideQuestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideQuestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A00BB49A2E3E77AC00D335A4 /* Exceptions for "SideQuestsWidget" folder in "SideQuestsWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A00BB4872E3E77AC00D335A4 /* SideQuestsWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A00BB48B2E3E77AC00D335A4 /* SideQuestsWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A00BB49A2E3E77AC00D335A4 /* Exceptions for "SideQuestsWidget" folder in "SideQuestsWidgetExtension" target */,
+			);
+			path = SideQuestsWidget;
+			sourceTree = "<group>";
+		};
 		A00D7D3C2E3AB91300F7538C /* SideQuestsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SideQuestsTests;
@@ -72,10 +132,20 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A00BB4852E3E77AC00D335A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00BB48A2E3E77AC00D335A4 /* SwiftUI.framework in Frameworks */,
+				A00BB4892E3E77AC00D335A4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A00D7D262E3AB91200F7538C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00BB45C2E3BF68E00D335A4 /* Solar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +177,8 @@
 		A00BB3D22E3AF73C00D335A4 /* SideQuests */ = {
 			isa = PBXGroup;
 			children = (
+				A00BB4642E3BFA3600D335A4 /* Services */,
+				A00BB40C2E3BCD2600D335A4 /* LocationManager.swift */,
 				A00BB3C82E3AF73C00D335A4 /* AppState.swift */,
 				A00BB3C92E3AF73C00D335A4 /* ContentView.swift */,
 				A00BB3CA2E3AF73C00D335A4 /* MainTabView.swift */,
@@ -124,21 +196,53 @@
 		A00BB3D42E3AF73C00D335A4 /* SideQuests */ = {
 			isa = PBXGroup;
 			children = (
+				A00BB49E2E3E78AE00D335A4 /* SideQuests.entitlements */,
+				A00BB40E2E3BD2AF00D335A4 /* Info.plist */,
 				A00BB3C72E3AF73C00D335A4 /* Preview Content */,
 				A00BB3D22E3AF73C00D335A4 /* SideQuests */,
 				A00BB3D32E3AF73C00D335A4 /* Assets.xcassets */,
-				A00BB40A2E3AFA1B00D335A4 /* questpacks */,
 			);
 			path = SideQuests;
+			sourceTree = "<group>";
+		};
+		A00BB4642E3BFA3600D335A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A00BB4632E3BFA3600D335A4 /* TimeOfDayService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A00BB46B2E3E777D00D335A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A00BB46C2E3E777D00D335A4 /* WidgetKit.framework */,
+				A00BB46E2E3E777D00D335A4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A00BB4B02E3E823C00D335A4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A00BB4AA2E3E80FB00D335A4 /* RefreshPromptIntent.swift */,
+				A00BB4AB2E3E80FB00D335A4 /* SharedModels.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		A00D7D202E3AB91200F7538C = {
 			isa = PBXGroup;
 			children = (
+				A00BB4B02E3E823C00D335A4 /* Shared */,
+				A00BB49F2E3E79B200D335A4 /* SideQuestsWidgetExtension.entitlements */,
 				A00BB3D42E3AF73C00D335A4 /* SideQuests */,
 				A00D7D3C2E3AB91300F7538C /* SideQuestsTests */,
 				A00D7D462E3AB91300F7538C /* SideQuestsUITests */,
+				A00BB48B2E3E77AC00D335A4 /* SideQuestsWidget */,
+				A00BB46B2E3E777D00D335A4 /* Frameworks */,
 				A00D7D2A2E3AB91200F7538C /* Products */,
+				A00BB5192E3E8B0800D335A4 /* questpacks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +252,7 @@
 				A00D7D292E3AB91200F7538C /* SideQuests.app */,
 				A00D7D392E3AB91300F7538C /* SideQuestsTests.xctest */,
 				A00D7D432E3AB91300F7538C /* SideQuestsUITests.xctest */,
+				A00BB4882E3E77AC00D335A4 /* SideQuestsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +260,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A00BB4872E3E77AC00D335A4 /* SideQuestsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00BB49B2E3E77AC00D335A4 /* Build configuration list for PBXNativeTarget "SideQuestsWidgetExtension" */;
+			buildPhases = (
+				A00BB4842E3E77AC00D335A4 /* Sources */,
+				A00BB4852E3E77AC00D335A4 /* Frameworks */,
+				A00BB4862E3E77AC00D335A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A00BB48B2E3E77AC00D335A4 /* SideQuestsWidget */,
+			);
+			name = SideQuestsWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = SideQuestsWidgetExtension;
+			productReference = A00BB4882E3E77AC00D335A4 /* SideQuestsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A00D7D282E3AB91200F7538C /* SideQuests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A00D7D4D2E3AB91300F7538C /* Build configuration list for PBXNativeTarget "SideQuests" */;
@@ -162,13 +289,16 @@
 				A00D7D252E3AB91200F7538C /* Sources */,
 				A00D7D262E3AB91200F7538C /* Frameworks */,
 				A00D7D272E3AB91200F7538C /* Resources */,
+				A00BB4832E3E777E00D335A4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A00BB4982E3E77AC00D335A4 /* PBXTargetDependency */,
 			);
 			name = SideQuests;
 			packageProductDependencies = (
+				A00BB4312E3BF4DB00D335A4 /* Solar */,
 			);
 			productName = SideQuests;
 			productReference = A00D7D292E3AB91200F7538C /* SideQuests.app */;
@@ -230,6 +360,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					A00BB4872E3E77AC00D335A4 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					A00D7D282E3AB91200F7538C = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -252,6 +385,9 @@
 			);
 			mainGroup = A00D7D202E3AB91200F7538C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A00BB40F2E3BF4DB00D335A4 /* XCRemoteSwiftPackageReference "Solar" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A00D7D2A2E3AB91200F7538C /* Products */;
 			projectDirPath = "";
@@ -260,16 +396,25 @@
 				A00D7D282E3AB91200F7538C /* SideQuests */,
 				A00D7D382E3AB91300F7538C /* SideQuestsTests */,
 				A00D7D422E3AB91300F7538C /* SideQuestsUITests */,
+				A00BB4872E3E77AC00D335A4 /* SideQuestsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A00BB4862E3E77AC00D335A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00BB51B2E3E8B2500D335A4 /* questpacks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A00D7D272E3AB91200F7538C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00BB40B2E3AFA1B00D335A4 /* questpacks in Resources */,
+				A00BB51C2E3E8BB300D335A4 /* questpacks in Resources */,
 				A00BB3DF2E3AF73C00D335A4 /* Preview Assets.xcassets in Resources */,
 				A00BB3E02E3AF73C00D335A4 /* Assets.xcassets in Resources */,
 			);
@@ -292,16 +437,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A00BB4842E3E77AC00D335A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00BB4AE2E3E80FB00D335A4 /* SharedModels.swift in Sources */,
+				A00BB4AF2E3E80FB00D335A4 /* RefreshPromptIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A00D7D252E3AB91200F7538C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00BB4AC2E3E80FB00D335A4 /* SharedModels.swift in Sources */,
+				A00BB4AD2E3E80FB00D335A4 /* RefreshPromptIntent.swift in Sources */,
 				A00BB3D52E3AF73C00D335A4 /* AppState.swift in Sources */,
 				A00BB3D62E3AF73C00D335A4 /* ContentView.swift in Sources */,
 				A00BB3D72E3AF73C00D335A4 /* MainTabView.swift in Sources */,
+				A00BB40D2E3BCD2600D335A4 /* LocationManager.swift in Sources */,
 				A00BB3D82E3AF73C00D335A4 /* Models.swift in Sources */,
 				A00BB3D92E3AF73C00D335A4 /* PacksView.swift in Sources */,
 				A00BB3DA2E3AF73C00D335A4 /* PromptView.swift in Sources */,
+				A00BB4652E3BFA3600D335A4 /* TimeOfDayService.swift in Sources */,
 				A00BB3DB2E3AF73C00D335A4 /* QuestPackLoader.swift in Sources */,
 				A00BB3DC2E3AF73C00D335A4 /* SettingsView.swift in Sources */,
 				A00BB3DD2E3AF73C00D335A4 /* SideQuestsApp.swift in Sources */,
@@ -326,6 +484,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A00BB4982E3E77AC00D335A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00BB4872E3E77AC00D335A4 /* SideQuestsWidgetExtension */;
+			targetProxy = A00BB4972E3E77AC00D335A4 /* PBXContainerItemProxy */;
+		};
 		A00D7D3B2E3AB91300F7538C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A00D7D282E3AB91200F7538C /* SideQuests */;
@@ -339,6 +502,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A00BB49C2E3E77AC00D335A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SideQuestsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U42QPW3ZVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SideQuestsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SideQuests Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lucas.SideQuests.SideQuestsWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00BB49D2E3E77AC00D335A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SideQuestsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U42QPW3ZVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SideQuestsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SideQuests Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lucas.SideQuests.SideQuestsWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A00D7D4B2E3AB91300F7538C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -463,17 +684,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SideQuests/SideQuests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SideQuests/Preview Content\"";
 				DEVELOPMENT_TEAM = U42QPW3ZVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SideQuests/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "SideQuests uses your location to intelligently determine when you are home or away, helping suggest relevant activities without draining your battery.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to provide you with prompts that are relevant to whether you're at home or out and about.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,17 +718,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SideQuests/SideQuests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SideQuests/Preview Content\"";
 				DEVELOPMENT_TEAM = U42QPW3ZVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SideQuests/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "SideQuests uses your location to intelligently determine when you are home or away, helping suggest relevant activities without draining your battery.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to provide you with prompts that are relevant to whether you're at home or out and about.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,6 +822,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A00BB49B2E3E77AC00D335A4 /* Build configuration list for PBXNativeTarget "SideQuestsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00BB49C2E3E77AC00D335A4 /* Debug */,
+				A00BB49D2E3E77AC00D335A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A00D7D242E3AB91200F7538C /* Build configuration list for PBXProject "SideQuests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -628,6 +868,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A00BB40F2E3BF4DB00D335A4 /* XCRemoteSwiftPackageReference "Solar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ceeK/Solar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A00BB4312E3BF4DB00D335A4 /* Solar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00BB40F2E3BF4DB00D335A4 /* XCRemoteSwiftPackageReference "Solar" */;
+			productName = Solar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A00D7D212E3AB91200F7538C /* Project object */;
 }

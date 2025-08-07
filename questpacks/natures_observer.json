@@ -10,7 +10,8 @@
                 "vibe": "peaceful",
                 "durationInMinutes": 2,
                 "tools": ["window"],
-                "timesOfDay": ["day", "sunset"]
+                "timesOfDay": ["day", "sunset"],
+                "locationContext": "any"
             }
         },
         {
@@ -20,7 +21,8 @@
                 "vibe": "refreshed",
                 "durationInMinutes": 1,
                 "tools": [],
-                "timesOfDay": ["sunrise", "day"]
+                "timesOfDay": ["sunrise", "day"],
+                "locationContext": "notHome"
             }
         }
     ]

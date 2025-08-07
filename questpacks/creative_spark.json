@@ -10,7 +10,8 @@
                 "vibe": "playful",
                 "durationInMinutes": 10,
                 "tools": ["pen", "paper"],
-                "timesOfDay": ["day"]
+                "timesOfDay": ["day"],
+                "locationContext": "any"
             }
         },
         {
@@ -20,7 +21,8 @@
                 "vibe": "expressive",
                 "durationInMinutes": 5,
                 "tools": ["pen", "paper"],
-                "timesOfDay": ["day", "night"]
+                "timesOfDay": ["day", "night"],
+                "locationContext": "any"
             }
         }
     ]
