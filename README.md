@@ -1,5 +1,3 @@
 # sidequests
 
-The anti-doomscroll app
-
-Waiting on apple dev
+Fun way to get random side quests IRL
